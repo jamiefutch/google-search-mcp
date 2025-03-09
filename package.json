@@ -1,0 +1,47 @@
+{
+  "name": "@mcp-server/google-search-mcp",
+  "version": "1.0.3",
+  "description": "Model Context Protocol server for google search.",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "google-search-mcp": "dist/index.js"
+  },
+  "homepage": "https://github.com/modelcontextprotocol-servers/google-search-mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/modelcontextprotocol-servers/google-search-mcp.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc -w",
+    "postinstall": "npx playwright install chromium"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "mcp",
+    "google",
+    "search",
+    "model-context-protocol",
+    "claude",
+    "playwright"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "minimist": "^1.2.8",
+    "pino": "^9.6.0",
+    "pino-pretty": "^13.0.0",
+    "playwright": "^1.41.2",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/minimist": "^1.2.5",
+    "@types/node": "^20.11.19",
+    "typescript": "^5.3.3"
+  }
+}
